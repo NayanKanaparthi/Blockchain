@@ -25,7 +25,7 @@ class Blockchain:
                'timestamp': str(datetime.datetime.now()), # in datetime lib inside datetime module we are accessing now function which will give us the exact date and time when the block is created
                'proof': proof, #later on we will add the proof of work function and link it to the prood here
                'previous_hash': previous_hash
-               'data:'}
+               'data': }
          
         self.chain.append(block) #apending the blockc that is created to the chain in the form of list
         return block
